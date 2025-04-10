@@ -86,9 +86,9 @@ if st.button("Parse Address"):
         )
     
         combined_input_2 = (
-            "Find me the addressee name, phone number or/and email, any instruction for the dilivery, villa number or flat number, PO Box number or code, building name or apartment name, street or/and landmark from the address: "
+            "You are an expert in parsing UAE addresses into structured data. Find me the addressee name, phone number or/and email, any instruction for the dilivery, villa number or flat number, PO Box number or code, building name or apartment name, street or/and landmark from the address: "
             + query +
-            "\n\nReturn a dictionary in json with keys: addressee name (if available), phone number (if available), email (if available), delivery instructions (if available), villa number or flat number (if available), PO Box number or code (if available), floor number, building name or apartment name (if available) and street (if available), landmark (if available) and a confidence score. If any of the information is not available, please return Null. Just give me the information without any preface. And return Null if you don't know. Only return the valid JSON. NO PREAMBLE"
+            "\n\nReturn a dictionary in json with keys: addressee name (if available), phone number (if available), email (if available), delivery instructions (if available), villa number or flat number (if available), PO Box number or code (if available), floor number, building name or apartment name (if available) and street (if available), landmark (if available), a confidence score for emirates, confidence score for region and confidence score for street. If any of the information is not available, please return Null. Just give me the information without any preface. And return Null if you don't know. Only return the valid JSON. NO PREAMBLE"
         )
     
         # Run the model on both prompts
